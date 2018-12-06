@@ -10,7 +10,9 @@ Code is tested with Python 3.6.6 (Anaconda distribution) on Win10.  Developed wi
 * Day 3:  Used a class to store/parse data (via regex) for a rectangle.  Used a numpy matrix to store values where the rectangles overlapped.  Iterated through that large matrix a couple of times, although it was simplified with np.where.
 * Day 4:  Datetime for time differences, although this may have been overkill.  Sort and iterate over an event log, keeping track of which
 minutes were spent sleeping by each individual guard.
-* Day 5:  Collapsing a (very long) string by matching letters, and then (part 2) collapsing it after removing each letter of the alphabet.  I don't think that I implemented it in as time-efficient way as possible, as each "collapsing" took a couple of minutes.  But, brute force worked for a non-competitive entry.
+* Day 5:  Collapsing a (very long) string by matching letters, and then (part 2) collapsing it after removing each letter of the alphabet.  I don't think that I implemented it in as time-efficient way as possible, as each "collapsing" took a couple of minutes.  But, brute force worked for a non-competitive entry.  I had started out by trying to implement something where the string/list length wouldn't be altered (i.e. replace chars with a sentinel) but abandoned it when I started converting the string to a list first.  (I wrongly thought list item removal was O(1).)
+* Day 6:  On a grid, found the area of influence for a particular point (for Part 1), and the area with a total distance to all points less than a critical value.  This one
+involved iterating through numpy arrays.
 
 
 
