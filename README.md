@@ -16,6 +16,7 @@ involved iterating through numpy arrays.
 * Day 7:  Had to figure out a graph of process, and then the order to do the steps.  Used a class for a node (step of the process) with multiple parents and multiple children.  Part two had another structure for workers, and a simulation of parallel
 work.  Took a bit longer than others.
 * Day 8:  Used a little class to model a directed graph, parsed recursively and inspected recursively.
+* Day 9:  Adding/removing to a list.  Part 1 finished quickly, but Part 2 was taking forever, due to the expense of Python adding/removing to the middle of a list.  (Is this a theme?)  A hint from the reddit suggested the package "blist" (i.e. "conda install blist"), and the x100 size array finished very quickly.
 
 
 
