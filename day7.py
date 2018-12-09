@@ -59,7 +59,7 @@ for aIns in alldata:
 
 def solvePart1():
     startNodes = []
-    for sName,aNode in nodes.items():
+    for _,aNode in nodes.items():
         if len(aNode.parents) == 0:
             startNodes.append(aNode)
 
@@ -69,7 +69,7 @@ def solvePart1():
         print(startNodes)
         aNode = startNodes.pop(0)
         order.append(aNode)
-        for sn, childNode in aNode.children.items():
+        for _, childNode in aNode.children.items():
             del childNode.parents[aNode.name]
             if len(childNode.parents) == 0:
                 startNodes.append(childNode)
@@ -101,7 +101,7 @@ def incrementTime(workerlist, availablenodes):
         if aWorker.currentNode != None:
             aWorker.remainingTime -= 1
             if aWorker.remainingTime == 0:
-                for sn, childNode in aWorker.currentNode.children.items():
+                for _, childNode in aWorker.currentNode.children.items():
                     del childNode.parents[aWorker.currentNode.name]
                     if len(childNode.parents) == 0:
                         availablenodes.append(childNode)
