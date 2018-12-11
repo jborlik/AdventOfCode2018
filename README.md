@@ -17,6 +17,8 @@ involved iterating through numpy arrays.
 work.  Took a bit longer than others.
 * Day 8:  Used a little class to model a directed graph, parsed recursively and inspected recursively.
 * Day 9:  Adding/removing to a list.  Part 1 finished quickly, but Part 2 was taking forever, due to the expense of Python adding/removing to the middle of a list.  (Is this a theme?)  A hint from the reddit suggested the package "blist" (i.e. "conda install blist"), and the x100 size array finished very quickly.
+* Day 10:  Interesting problem to simulate particles moving and then figure out what they are writing out.  There isn't a good way for the machine to identify something as text, at least in a time-efficient way, so there needed to be a way to terminate the processing and display the results.  My first attempt was to count the number of particle neighbors... I thought that when every particle had a neighbor the text would be visible.  I counted neighbors as up/down/right/left, and maybe if I would have included diagonals it would have worked.  Based on a hint from reddit, in the next attempt I looked for the minimum bounding box... This worked.  I used matplotlib to display.
+* Day 11:  Fill out a grid with computed values, and then look for the maximum submatrices.  The first part (3x3 submatrices) worked fine after I remembered some of the numpy indexing.  The second part took a while to figure out, as I was missing the examination of the last column.
 
 
 
