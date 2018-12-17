@@ -21,6 +21,9 @@ work.  Took a bit longer than others.
 * Day 11:  Fill out a grid with computed values, and then look for the maximum submatrices.  The first part (3x3 submatrices) worked fine after I remembered some of the numpy indexing.  The second part took a while to figure out, as I was missing the examination of the last column.
 * Day 12:  Apply rules to a state, to evolve to another (possibly bigger) state.  I tried doing this with a dictionary, but the indexing got too weird.  A deque worked better, as one could grow (or shrink) the ends.  I finally got part 1 to work (for 20 evolutions), but part 2 required 5 billion (which would take a year or so of computations).  Looking at the first 30k evolutions, it was clear that the number of plants was constant, but just moving out to the right in the array.  In the end, I got the answer by hand-extrapolating.
 * Day 13:  Lots of infrastructure to support walking carts around a predefined map.  Used direction arrays for left/right turns.  I had forgotten to sort the carts top-to-bottom.
+* Day 14:  Add to a list, check for termination.  Part 1 was relatively easy, but I can't seem to get a correct answer for Part 2.  :(
+* Day 15:  Simulate a battle between elves and goblins.  Fun concept, but one has to get the movements *exactly* correct.  I tried using an implementation of A* pathfinding (in utilities), which seems to work... but my overall solution does not work properly.  :(
+
 
 
 ## See previous work at:
