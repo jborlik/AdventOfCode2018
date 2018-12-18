@@ -5,7 +5,6 @@ utilities
 This module provides utility functions that might be useful in
 several places within the Advent Of Code projects.
 
-Maybe I'll use it, maybe not
 
 """
 
@@ -27,10 +26,10 @@ class AStarNode():
 def astar(maze, start, end, walkableItem, allow_diagonal_movement = False):
     """
     Returns a list of tuples as a path from the given start to the given end in the given maze
-    :param maze:
-    :param start:
-    :param end:
-    :param walkableItem: 
+    :param maze:  2D array like maze[row][col], with values indicating paths
+    :param start: (row,col) tuple corresponding to maze starting position
+    :param end:  (row,col) tuple corresponding to the desired end point
+    :param walkableItem: symbol that indicates a walkable path (type corresponding to maze)
     :return:  None if not walkable
     """
 

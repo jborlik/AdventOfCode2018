@@ -3,7 +3,6 @@
 #import collections
 
 #import matplotlib.pyplot as plt
-#from matplotlib.animation import FuncAnimation
 #import itertools
 #from blist import blist
 # conda install blist
