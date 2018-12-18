@@ -23,6 +23,9 @@ work.  Took a bit longer than others.
 * Day 13:  Lots of infrastructure to support walking carts around a predefined map.  Used direction arrays for left/right turns.  I had forgotten to sort the carts top-to-bottom.
 * Day 14:  Add to a list, check for termination.  Part 1 was relatively easy, but I can't seem to get a correct answer for Part 2.  :(
 * Day 15:  Simulate a battle between elves and goblins.  Fun concept, but one has to get the movements *exactly* correct.  I tried using an implementation of A* pathfinding (in utilities), which seems to work... but my overall solution does not work properly.  :(
+* Day 16:
+* Day 17:
+* Day 18:  A "wood/open/lumberyard" map with rules to transition per timestep.  Part two involved iterating through a billion timesteps, which was infeasible, but observation of the results was that the final objective value was in a cycle.  So simulate 10k or so steps, and sort through it via Excel.
 
 
 
